@@ -31,7 +31,7 @@
 
 
 # Zadanie
-Vytvorte frimware pre MCU, ktorý bude vypínať a zapínať LED spôsobom pripomínajúcim "fade in" a "fade out" efekt. Program bude mať dva módy - manuálny a automatický. V manuálnom móde bude LED plynule a autoamticky prechádzať medzi stavmi "ON" a "OFF". To znamená, že ak je LED na začiatku v stave "ON", tak sa intenzita jej svietenia začne pomaly zmenšovať až do momentu, pokiaľ nezhasne. Keď LED zhasne (teda je v stave OFF), tak sa začne postupne rozsvecovať. V manuálnom móde bude možné nastavovať intenzitu svietenia LED prostredníctvom terminálu z PC pričom prechod z jednej intenzity svietenia na druhú musí byť plynulý. Prepínanie medzi manuálnym a automatickým módom bude taktiež ovládateľne prostredníctvom terminálu z PC.
+Vytvorte frimware pre MCU, ktorý bude vypínať a zapínať LED spôsobom pripomínajúcim "fade in" a "fade out" efekt. Program bude mať dva módy - manuálny a automatický. V automatickom móde bude LED plynule a autoamticky prechádzať medzi stavmi "ON" a "OFF". To znamená, že ak je LED na začiatku v stave "ON", tak sa intenzita jej svietenia začne pomaly zmenšovať až do momentu, pokiaľ nezhasne. Keď LED zhasne (teda je v stave OFF), tak sa začne postupne rozsvecovať. V manuálnom móde bude možné nastavovať intenzitu svietenia LED prostredníctvom terminálu z PC pričom prechod z jednej intenzity svietenia na druhú musí byť plynulý. Prepínanie medzi manuálnym a automatickým módom bude taktiež ovládateľne prostredníctvom terminálu z PC.
 
 ### Úlohy
 1. Vytvoriť nový projekt, v ktorom nakonfigurujete periférie nevyhnutné pre toto zadanie.
