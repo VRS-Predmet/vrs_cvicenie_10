@@ -199,26 +199,26 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles TIM3 global interrupt.
+  * @brief This function handles TIM2 global interrupt.
   */
-void TIM3_IRQHandler(void)
+void TIM2_IRQHandler(void)
 {
-	if(LL_TIM_IsActiveFlag_UPDATE(TIM3))
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM2))
 	{
-		if(LL_GPIO_IsOutputPinSet(GPIOB, LL_GPIO_PIN_3))
+		if(LL_GPIO_IsOutputPinSet(GPIOB, LL_GPIO_PIN_13))
 		{
-			LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_13);
 		}
 		else
 		{
-			LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_13);
 		}
 
 		ADC_start_conversion();
 		voltage = ADC_convertedValue2float();
 	}
 
-	LL_TIM_ClearFlag_UPDATE(TIM3);
+	LL_TIM_ClearFlag_UPDATE(TIM2);
 }
 
 /* USER CODE BEGIN 1 */
